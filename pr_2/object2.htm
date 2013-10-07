@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+;(function($){var h=$.scrollTo=function(a,b,c){$(window).scrollTo(a,b,c)};h.defaults={axis:'xy',duration:parseFloat($.fn.jquery)>=1.3?0:1,limit:true};h.window=function(a){return $(window)._scrollable()};$.fn._scrollable=function(){return this.map(function(){var a=this,isWin=!a.nodeName||$.inArray(a.nodeName.toLowerCase(),['iframe','#document','html','body'])!=-1;if(!isWin)return a;var b=(a.contentWindow||a).document||a.ownerDocument||a;return/webkit/i.test(navigator.userAgent)||b.compatMode=='BackCompat'?b.body:b.documentElement})};$.fn.scrollTo=function(e,f,g){if(typeof f=='object'){g=f;f=0}if(typeof g=='function')g={onAfter:g};if(e=='max')e=9e9;g=$.extend({},h.defaults,g);f=f||g.duration;g.queue=g.queue&&g.axis.length>1;if(g.queue)f/=2;g.offset=both(g.offset);g.over=both(g.over);return this._scrollable().each(function(){var d=this,$elem=$(d),targ=e,toff,attr={},win=$elem.is('html,body');switch(typeof targ){case'number':case'string':if(/^([+-]=)?\d+(\.\d+)?(px|%)?$/.test(targ)){targ=both(targ);break}targ=$(targ,this);if(!targ.length)return;case'object':if(targ.is||targ.style)toff=(targ=$(targ)).offset()}$.each(g.axis.split(''),function(i,a){var b=a=='x'?'Left':'Top',pos=b.toLowerCase(),key='scroll'+b,old=d[key],max=h.max(d,a);if(toff){attr[key]=toff[pos]+(win?0:old-$elem.offset()[pos]);if(g.margin){attr[key]-=parseInt(targ.css('margin'+b))||0;attr[key]-=parseInt(targ.css('border'+b+'Width'))||0}attr[key]+=g.offset[pos]||0;if(g.over[pos])attr[key]+=targ[a=='x'?'width':'height']()*g.over[pos]}else{var c=targ[pos];attr[key]=c.slice&&c.slice(-1)=='%'?parseFloat(c)/100*max:c}if(g.limit&&/^\d+$/.test(attr[key]))attr[key]=attr[key]<=0?0:Math.min(attr[key],max);if(!i&&g.queue){if(old!=attr[key])animate(g.onAfterFirst);delete attr[key]}});animate(g.onAfter);function animate(a){$elem.animate(attr,f,g.easing,a&&function(){a.call(this,e,g)})}}).end()};h.max=function(a,b){var c=b=='x'?'Width':'Height',scroll='scroll'+c;if(!$(a).is('html,body'))return a[scroll]-$(a)[c.toLowerCase()]();var d='client'+c,html=a.ownerDocument.documentElement,body=a.ownerDocument.body;return Math.max(html[scroll],body[scroll])-Math.min(html[d],body[d])};function both(a){return typeof a=='object'?a:{top:a,left:a}}})(jQuery);;(function($){var l=location.href.replace(/#.*/,'');var g=$.localScroll=function(a){$('body').localScroll(a)};g.defaults={duration:1e3,axis:'y',event:'click',stop:true,target:window,reset:true};g.hash=function(a){if(location.hash){a=$.extend({},g.defaults,a);a.hash=false;if(a.reset){var e=a.duration;delete a.duration;$(a.target).scrollTo(0,a);a.duration=e}i(0,location,a)}};$.fn.localScroll=function(b){b=$.extend({},g.defaults,b);return b.lazy?this.bind(b.event,function(a){var e=$([a.target,a.target.parentNode]).filter(d)[0];if(e)i(a,e,b)}):this.find('a,area').filter(d).bind(b.event,function(a){i(a,this,b)}).end().end();function d(){return!!this.href&&!!this.hash&&this.href.replace(this.hash,'')==l&&(!b.filter||$(this).is(b.filter))}};function i(a,e,b){var d=e.hash.slice(1),f=document.getElementById(d)||document.getElementsByName(d)[0];if(!f)return;if(a)a.preventDefault();var h=$(b.target);if(b.lock&&h.is(':animated')||b.onBefore&&b.onBefore.call(b,a,f,h)===false)return;if(b.stop)h.stop(true);if(b.hash){var j=f.id==d?'id':'name',k=$('<a> </a>').attr(j,d).css({position:'absolute',top:$(window).scrollTop(),left:$(window).scrollLeft()});f[j]='';$('body').prepend(k);location=e.hash;k.remove();f[j]=d}h.scrollTo(f,b).trigger('notify.serialScroll',[f])}})(jQuery);
+</script>
+<script type="text/javascript">
+		jQuery(document).ready(function () {
+			jQuery('nav, footer').localScroll({duration:2750,easing:'linear'});
+		});
+</script>
+<style type="text/css">
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;
+}
+
+body {
+	margin: 0px auto;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: normal;
+	font-style: normal;
+	margin: 0px auto;
+	text-align: center;
+	position: relative;
+}
+
+nav {
+	position: absolute;
+	padding: 5px 10px;
+	left: 35px;
+	background-color: #333;
+  -o-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -o-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+}
+
+header {
+
+}
+footer {
+	position: absolute;
+	padding: 5px 10px;
+	left: 35px;
+	bottom: 0px;
+	background-color: #333;
+  -o-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  -o-transform-origin: bottom left;
+  -moz-transform-origin: bottom left;
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+}
+h1 {
+
+}
+aside {
+
+}
+p {
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/* `Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.one.column, 
+.two.columns, 
+.three.columns, 
+.four.columns, 
+.five.columns, 
+.six.columns, 
+.seven.columns, 
+.eight.columns, 
+.nine.columns,
+.ten.columns, 
+.eleven.columns, 
+.twelve.columns  {display: inline; float: left; margin-left: 10px; margin-right: 10px;} 
+
+
+/* `Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.one.column.first, 
+.two.columns.first, 
+.three.columns.first, 
+.four.columns.first, 
+.five.columns.first, 
+.six.columns.first, 
+.seven.columns.first, 
+.eight.columns.first, 
+.nine.columns.first,
+.ten.columns.first, 
+.eleven.columns.first, 
+.twelve.columns.first  {margin-left: 0px;} 
+
+.one.column.last, 
+.two.columns.last, 
+.three.columns.last, 
+.four.columns.last, 
+.five.columns.last, 
+.six.columns.last, 
+.seven.columns.last, 
+.eight.columns.last, 
+.nine.columns.last,
+.ten.columns.last, 
+.eleven.columns.last, 
+.twelve.columns.last  {margin-right: 0px;} 
+
+
+/* `Grid >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.one.column {width: 60px;}
+
+.two.columns {width: 140px;}
+
+.three.columns {width: 220px;}
+
+.four.columns {width: 300px;}
+
+.five.columns {width: 380px;}
+
+.six.columns {width: 460px;}
+
+.seven.columns {width: 540px;}
+
+.eight.columns {width: 620px;}
+
+.nine.columns {width: 700px;}
+
+.ten.columns {width: 780px;}
+
+.eleven.columns {width: 860px;}
+
+.twelve.columns {width: 940px;}
+
+
+
+/* `Indents Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.indent-one {padding-left: 80px;}
+
+.indent-two {padding-left: 160px;}
+
+.indent-three {padding-left: 240px;}
+
+.indent-four {padding-left: 320px;}
+
+.indent-five {padding-left: 400px;}
+
+.indent-six {padding-left: 480px;}
+
+.indent-seven {padding-left: 560px;}
+
+.indent-eight {padding-left: 640px;}
+
+.indent-nine {padding-left: 720px;}
+
+.indent-ten {padding-left: 800px;}
+
+.indent-eleven {padding-left: 880px;}
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+</style>
+</head>
+<body>
+<div id="top"></div>
+<nav><a href="#bottom">Scroll to Bottom>></a></nav>
+<section><img src="museum2item.png" /></section>
+<div id="bottom"></div>
+<footer><a href="#top">Back to Top >></a></footer>
+</body>
