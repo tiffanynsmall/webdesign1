@@ -1,0 +1,252 @@
+* { 
+margin: 0; 
+padding: 0; 
+font-size: 1em; 
+}
+
+body {
+	background-color:rgba(0,0,0,.1);
+	
+}
+
+#container {
+	width:900px;
+	margin:0 auto;
+font-family:"Avenir LT W01 35 Light"; 
+line-height: 1.4; 
+padding: 10px;
+}
+
+ol, ul {
+	list-style:none;
+	
+}
+
+a:link {
+	text-decoration: none;
+	color:black;
+}
+a:hover {
+font-family:"Avenir LT W01 65 Medium";
+}
+a:visited {
+	color:black;
+}  
+ 
+
+.logomark img {
+	width:150px;
+	height:150px;
+	margin:0 0 80px 350px;
+}
+
+.navmenu {
+	width:880px;
+	float: left;
+	z-index:5;
+	font-family:"Avenir LT W01 85 Heavy";
+	font-size:24px;
+	text-align:center;
+	margin:5px;	
+}
+
+.navmenu a{
+	width:280px;
+	height:150px;
+	float: left;
+	padding-top:20px;
+	text-decoration: none;
+	
+}
+
+
+.test {
+	margin-left:370px;
+	margin-top:-100px;
+	width:280px;
+	float:left;
+	
+}
+
+.area {
+	width:10px;
+	float:left;
+}
+
+.box1 { 
+position: absolute;
+width: 90px; 
+height: 90px; 
+background: rgba(3,18,94,.3); 
+-moz-border-radius: 180px; 
+-webkit-border-radius: 180px; 
+border-radius: 180px;
+z-index: 2; 
+float: left;
+margin:10px; 
+text-align:center;
+
+}
+
+.box2 { 
+position: absolute;
+width: 90px; 
+height: 90px; 
+background: rgba(3,18,94,.3); 
+-moz-border-radius: 180px; 
+-webkit-border-radius: 180px; 
+border-radius: 180px;
+z-index: 2; 
+float: left;
+margin:10px; 
+text-align:center;
+
+}
+
+.box3 { 
+position: absolute;
+width: 90px; 
+height: 90px; 
+background: rgba(3,18,94,.3); 
+-moz-border-radius: 180px; 
+-webkit-border-radius: 180px; 
+border-radius: 180px;
+z-index: 2; 
+float: left;
+margin:10px; 
+text-align:center;
+}
+
+.box4 { 
+position: absolute;
+width: 90px; 
+height: 90px; 
+background: rgba(3,18,94,.3); 
+-moz-border-radius: 180px; 
+-webkit-border-radius: 180px; 
+border-radius: 180px;
+z-index: 2; 
+float: left;
+margin:10px; 
+text-align:center;
+}
+
+.box5 { 
+position: absolute;
+width: 90px; 
+height: 90px; 
+background: rgba(3,18,94,.3); 
+-moz-border-radius: 180px; 
+-webkit-border-radius: 180px; 
+border-radius: 180px;
+z-index: 2; 
+float: left;
+margin:10px; 
+text-align:center;
+}
+
+.box6 {
+position: absolute;
+width: 90px; 
+height: 90px; 
+background: rgba(3,18,94,.3); 
+-moz-border-radius: 180px; 
+-webkit-border-radius: 180px; 
+border-radius: 180px;
+z-index: 2; 
+float: left;
+margin:10px; 
+text-align:center;
+}
+
+.box7 { 
+position: absolute;
+width: 90px; 
+height: 90px; 
+background: rgba(3,18,94,.3); 
+-moz-border-radius: 180px; 
+-webkit-border-radius: 180px; 
+border-radius: 180px;
+z-index: 2; 
+float: left;
+margin:10px; 
+text-align:center;
+}
+
+.box8 { 
+position: absolute;
+width: 90px; 
+height: 90px; 
+background: rgba(3,18,94,.3); 
+-moz-border-radius: 180px; 
+-webkit-border-radius: 180px; 
+border-radius: 180px;
+z-index: 2; 
+float: left;
+margin:10px; 
+text-align:center;
+}
+
+
+.box9 { 
+position: absolute;
+width: 90px; 
+height: 90px; 
+background: rgba(3,18,94,.3); 
+-moz-border-radius: 180px; 
+-webkit-border-radius: 180px; 
+border-radius: 180px;
+z-index: 2; 
+float: left;
+margin:10px; 
+text-align:center;
+}
+
+
+#footer {
+	border-top:1px solid black;
+	width:800px;
+	font-size:12px;
+	padding:10px 20px 5px 10px;
+	float:left;
+	font-family:"Avenir LT W01 35 Light";
+	margin-top:100px; 
+
+}
+
+.footermenu {
+	width:600px;
+	float:left;
+	font-size:16px;
+	margin-top:10px;
+}
+
+
+.footermenu a{
+	width:120px;
+	float:left;
+	text-align: center;
+	margin-top:-20px;
+}
+
+.footermenu ul{
+		list-style:none;
+
+	
+}
+.contact {
+	width:200px;
+	float:right;
+	font-size:11px;
+	text-align:right;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+
+.warning {
+	font-size:9px;
+	float:left;
+	margin:-50px 0 5px 0;
+	text-align:left;
+}
+

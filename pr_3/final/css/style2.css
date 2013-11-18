@@ -1,0 +1,269 @@
+* { 
+margin: 0; 
+padding: 0; 
+font-size: 1em; 
+}
+
+body {
+	background-color:rgba(0,0,0,.1);
+	
+}
+
+#container {
+	width:900px;
+	margin:0 auto;
+font-family:"Avenir LT W01 35 Light"; 
+line-height: 1.4; 
+padding: 10px;
+}
+
+a:link {
+	text-decoration: none;
+	color:black;
+}
+a:hover {
+font-family:"Avenir LT W01 65 Medium";
+}
+a:visited {
+	color:black;
+}  
+ 
+img {
+width:150px;
+height:150px;
+float:left;
+} 
+ 
+#navmenu {
+	width:900px;
+	height:100px;
+	float: left;
+	z-index:5;
+font-family:"Avenir LT W01 35 Light";
+	font-size:16px;
+	text-align:center;
+	margin:5px 5px 70px 5px;	
+	} 
+
+.box1 { 
+width: 100px; 
+height: 100px; 
+background: rgba(3,18,94,.4); 
+-moz-border-radius: 50px; 
+-webkit-border-radius: 50px; 
+border-radius: 50px;
+z-index: 2; 
+float: left;
+margin:10px;
+text-align:center;
+
+}
+
+.box2 { 
+width: 100px; 
+height: 100px; 
+background: rgba(3,18,94,.4); 
+-moz-border-radius: 50px; 
+-webkit-border-radius: 50px; 
+border-radius: 50px;
+z-index: 2; 
+float: left;
+margin:10px;
+text-align:center;
+
+}
+
+.box3 { 
+width: 100px; 
+height: 100px; 
+background: rgba(3,18,94,.4); 
+-moz-border-radius: 50px; 
+-webkit-border-radius: 50px; 
+border-radius: 50px;
+z-index: 2; 
+float: left;
+margin:10px;
+text-align:center;
+}
+
+.box4 { 
+width: 100px; 
+height: 100px; 
+background: rgba(3,18,94,.4); 
+-moz-border-radius: 50px; 
+-webkit-border-radius: 50px; 
+border-radius: 50px;
+z-index: 2; 
+float: left;
+margin:10px;
+text-align:center;
+}
+
+.box5 { 
+width: 100px; 
+height: 100px; 
+background: rgba(3,18,94,.4); 
+-moz-border-radius: 50px; 
+-webkit-border-radius: 50px; 
+border-radius: 50px;
+z-index: 2; 
+float: left;
+margin:10px;
+text-align:center;
+}
+
+.box6 {
+width: 100px; 
+height: 100px; 
+background: rgba(3,18,94,.4); 
+-moz-border-radius: 50px; 
+-webkit-border-radius: 50px; 
+border-radius: 50px;
+z-index: 2; 
+float: left;
+margin:10px;
+text-align:center;
+}
+
+
+
+.content {
+	margin:0 20px 50px 20px;
+	width: 800px;
+}
+
+.mission {
+	width:800px;
+	float:left;
+	margin:100px 0 50px 0;
+}
+
+.mission ul{
+	margin-left:35px;
+	line-height:150%;
+}
+
+
+h3 {
+	margin:0 0 10px 0;
+font-family:"Avenir LT W01 65 Medium";
+font-size:20px;
+
+}
+
+h4 {
+	margin:0 0 5px 0;
+font-family:"Avenir LT W01 65 Medium";
+	
+}
+
+.donate {
+	width:800px;
+	float:left;
+	margin:25px 0 25px 350px;
+font-family:"Avenir LT W01 65 Medium";
+font-size:24px;
+
+}
+
+.box7 { 
+width: 125px; 
+height: 125px; 
+background: rgba(3,18,94,.4); 
+-moz-border-radius: 250px; 
+-webkit-border-radius: 250px; 
+border-radius: 250px;
+z-index: 2; 
+float: left;
+margin:10px;
+text-align:center;
+}
+
+.initiatives {
+	width:900px;
+	float: left;
+	margin:90px 0 0 0;
+}
+
+.initiatives h3{
+	width:280px;
+	float: left;
+	height:80px;
+	text-align: center;
+	border-left:1px dashed black;
+	margin:10px 5px 100px 0;
+	padding-top:40px;
+}
+
+h4{
+	width:280px;
+	float: left;
+	height:80px;
+	text-align: center;
+	margin:10px 5px 100px 0;
+	padding-top:40px;
+	font-size:20px;
+}
+
+.persons {
+	width:800px;
+	float:left;
+	margin-bottom:100px;
+	list-style: none;
+	
+}
+.persons h5{
+	margin-top:30px;
+	margin-bottom:10px;	
+}
+
+.persons ul {
+list-style: none;
+}
+
+span {
+	
+	
+}
+
+#footer {
+	border-top:1px solid black;
+	width:800px;
+	font-size:12px;
+	padding:10px 20px 5px 10px;
+	float:left;
+}
+
+.footermenu {
+	width:600px;
+	float:left;
+	font-size:16px;
+	margin-top:10px;
+}
+
+.footermenu a{
+	width:120px;
+	float:left;
+	text-align: center;
+}
+
+.footermenu ul{
+		list-style:none;
+
+	
+}
+
+.contact {
+	width:200px;
+	float:right;
+	font-size:11px;
+	text-align:right;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+
+.warning {
+	font-size:9px;
+	float:left;
+	margin:10px 0 5px 0;
+}
