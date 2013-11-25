@@ -1,7 +1,8 @@
 * { 
-margin: 0; 
-padding: 0; 
-font-size: 1em; 
+	margin: 0; 
+	padding: 0; 
+	font-size: 1em; 
+	font-family: 'Dosis', sans-serif;
 }
 
 body {
@@ -12,9 +13,9 @@ body {
 #container {
 	width:900px;
 	margin:0 auto;
-font-family:"Avenir LT W01 35 Light"; 
-line-height: 1.4; 
-padding: 10px;
+	font-family:"Avenir LT W01 35 Light"; 
+	line-height: 1.4; 
+	padding: 10px;
 }
 
 ol, ul {
@@ -27,7 +28,7 @@ a:link {
 	color:black;
 }
 a:hover {
-font-family:"Avenir LT W01 65 Medium";
+	font-family:"Avenir LT W01 65 Medium";
 }
 a:visited {
 	color:black;
@@ -35,8 +36,7 @@ a:visited {
  
 
 .logomark img {
-	width:150px;
-	height:150px;
+	width:275px;
 	margin:0 0 80px 350px;
 }
 
@@ -51,8 +51,8 @@ a:visited {
 }
 
 .navmenu a{
-	width:280px;
-	height:150px;
+	width:250px;
+	height:250px;
 	float: left;
 	padding-top:20px;
 	text-decoration: none;
@@ -61,144 +61,135 @@ a:visited {
 
 
 .test {
-	margin-left:370px;
-	margin-top:-100px;
-	width:280px;
+	position:absolute;
+	width:900px;
 	float:left;
-	
-}
+	z-index:1;
+	margin-left:30px;
+	}
 
 .area {
-	width:10px;
+	width:900px;
 	float:left;
 }
 
 .box1 { 
-position: absolute;
-width: 90px; 
-height: 90px; 
+width: 150px; 
+height: 150px; 
 background: rgba(3,18,94,.3); 
 -moz-border-radius: 180px; 
 -webkit-border-radius: 180px; 
 border-radius: 180px;
 z-index: 2; 
 float: left;
-margin:10px; 
+margin:40px;
 text-align:center;
 
 }
 
 .box2 { 
-position: absolute;
-width: 90px; 
-height: 90px; 
+width: 150px; 
+height: 150px; 
 background: rgba(3,18,94,.3); 
 -moz-border-radius: 180px; 
 -webkit-border-radius: 180px; 
 border-radius: 180px;
 z-index: 2; 
 float: left;
-margin:10px; 
+margin:40px; 
 text-align:center;
 
 }
 
 .box3 { 
-position: absolute;
-width: 90px; 
-height: 90px; 
+width: 150px; 
+height: 150px; 
 background: rgba(3,18,94,.3); 
 -moz-border-radius: 180px; 
 -webkit-border-radius: 180px; 
 border-radius: 180px;
 z-index: 2; 
 float: left;
-margin:10px; 
+margin:40px; 
 text-align:center;
 }
 
 .box4 { 
-position: absolute;
-width: 90px; 
-height: 90px; 
+width: 150px; 
+height: 150px; 
 background: rgba(3,18,94,.3); 
 -moz-border-radius: 180px; 
 -webkit-border-radius: 180px; 
 border-radius: 180px;
 z-index: 2; 
 float: left;
-margin:10px; 
+margin:40px; 
 text-align:center;
 }
 
 .box5 { 
-position: absolute;
-width: 90px; 
-height: 90px; 
+width: 150px; 
+height: 150px; 
 background: rgba(3,18,94,.3); 
 -moz-border-radius: 180px; 
 -webkit-border-radius: 180px; 
 border-radius: 180px;
 z-index: 2; 
 float: left;
-margin:10px; 
+margin:40px; 
 text-align:center;
 }
 
 .box6 {
-position: absolute;
-width: 90px; 
-height: 90px; 
+width: 150px; 
+height: 150px; 
 background: rgba(3,18,94,.3); 
 -moz-border-radius: 180px; 
 -webkit-border-radius: 180px; 
 border-radius: 180px;
 z-index: 2; 
 float: left;
-margin:10px; 
+margin:40px; 
 text-align:center;
 }
 
 .box7 { 
-position: absolute;
-width: 90px; 
-height: 90px; 
+width: 150px; 
+height: 150px; 
 background: rgba(3,18,94,.3); 
 -moz-border-radius: 180px; 
 -webkit-border-radius: 180px; 
 border-radius: 180px;
 z-index: 2; 
 float: left;
-margin:10px; 
+margin:40px; 
 text-align:center;
 }
 
 .box8 { 
-position: absolute;
-width: 90px; 
-height: 90px; 
+width: 150px; 
+height: 150px; 
 background: rgba(3,18,94,.3); 
 -moz-border-radius: 180px; 
 -webkit-border-radius: 180px; 
 border-radius: 180px;
 z-index: 2; 
 float: left;
-margin:10px; 
+margin:40px; 
 text-align:center;
 }
 
 
 .box9 { 
-position: absolute;
-width: 90px; 
-height: 90px; 
+width: 150px; 
+height: 150px; 
 background: rgba(3,18,94,.3); 
 -moz-border-radius: 180px; 
 -webkit-border-radius: 180px; 
 border-radius: 180px;
 z-index: 2; 
 float: left;
-margin:10px; 
+margin:40px; 
 text-align:center;
 }
 
