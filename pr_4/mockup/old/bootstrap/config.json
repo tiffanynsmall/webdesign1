@@ -1,0 +1,9 @@
+{
+  "vars": {
+    "@grid-gutter-width": "10px"
+  },
+  "css": [
+    "grid.less"
+  ],
+  "js": []
+}
