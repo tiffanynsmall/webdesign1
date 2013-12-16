@@ -1,0 +1,218 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Responsive Library - SEARCH</title>
+<link href='css/bootstrap.css' rel='stylesheet' type='text/css'>
+<link href='css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<link href='css/reset.css' rel='stylesheet' type='text/css'>
+<link href='css/stylesearchj.css' rel='stylesheet' type='text/css'>
+
+<style type="text/css">
+
+/* Usage code from Fonts.com */
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=37aac3e0-9f5c-44c6-ad60-27759dca384d");
+@font-face{
+font-family:"Calvert MT W01";
+src:url("fonts/71849652-9e3b-4adc-9c0d-81f4d4c5f2b0.eot?#iefix");
+src:url("fonts/71849652-9e3b-4adc-9c0d-81f4d4c5f2b0.eot?#iefix") format("eot"),url("fonts/4a7a9e50-8171-42f4-a32c-0cacaa7a03ea.woff") format("woff"),url("fonts/73590f79-fee4-4ab1-9e0e-3d9f2a9cc8f4.ttf") format("truetype"),url("fonts/d7ef63f2-be32-4e80-9cce-5f1fd4da7300.svg#d7ef63f2-be32-4e80-9cce-5f1fd4da7300") format("svg");
+}
+@font-face{
+font-family:"Calvert MT W01 Bold";
+src:url("fonts/618b8fa0-3ab0-481f-a92f-79eae9b1c8eb.eot?#iefix");
+src:url("fonts/618b8fa0-3ab0-481f-a92f-79eae9b1c8eb.eot?#iefix") format("eot"),url("fonts/46d0af3b-0a73-452c-96d4-1e09781d6fba.woff") format("woff"),url("fonts/44e2c17b-8e02-47fb-80ed-8e05498e4c2d.ttf") format("truetype"),url("fonts/45343f86-81ed-4799-911d-404b8eb847d5.svg#45343f86-81ed-4799-911d-404b8eb847d5") format("svg");
+}
+@font-face{
+font-family:"Calvert MT W01 Light";
+src:url("fonts/f681e3ed-fe8c-4c60-a34d-4d9adffa9462.eot?#iefix");
+src:url("fonts/f681e3ed-fe8c-4c60-a34d-4d9adffa9462.eot?#iefix") format("eot"),url("fonts/0b1f37e9-150c-4740-a6ba-b426ddd12898.woff") format("woff"),url("fonts/750c9b4a-b712-4fe4-9349-f57be516ebfe.ttf") format("truetype"),url("fonts/b717cfa5-b34e-4069-af35-12f7619d3981.svg#b717cfa5-b34e-4069-af35-12f7619d3981") format("svg");
+}
+@font-face{
+font-family:"Museo Sans W01 100";
+src:url("fonts/e14e9fd6-0631-4491-b873-211c7b6f926c.eot?#iefix");
+src:url("fonts/e14e9fd6-0631-4491-b873-211c7b6f926c.eot?#iefix") format("eot"),url("fonts/e976d680-12b6-411e-9f79-0ef9287f484d.woff") format("woff"),url("fonts/81780024-f1ae-4135-a0ae-d0bab2c19986.ttf") format("truetype"),url("fonts/98fa899e-fa41-4563-b67a-33d373ba60ee.svg#98fa899e-fa41-4563-b67a-33d373ba60ee") format("svg");
+}
+@font-face{
+font-family:"Museo Sans W01 500";
+src:url("fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix");
+src:url("fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix") format("eot"),url("fonts/d42dd843-62b0-4623-8855-d5882512c3c9.woff") format("woff"),url("fonts/6d532ccb-086c-4000-bab2-5d16862fcf01.ttf") format("truetype"),url("fonts/f56b7407-f97b-4cb3-9ce6-4e13065eec93.svg#f56b7407-f97b-4cb3-9ce6-4e13065eec93") format("svg");
+}
+
+</style>
+
+
+
+</head>
+<body>
+<div id="container">
+
+<header class="row">
+
+	<div class="col-xs-1 ">
+		<a href="index.html"><img class="logo" src="images/logo-01-01.png"></a>
+	</div>
+	
+	<div class="col-sm-7 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-6">
+	<ul class="mainhead list-inline">
+		<li class="" ><a href="">Programs</a></li>
+		<li class="" ><a href="">Exhibitions</a></li>
+		<li class="" ><a href="">Services</a></li>
+		<li class="" ><a href="">Careers</a></li>
+	</ul>
+	</div>	
+	
+	<div class="login col-xs-1 col-xs-offset-4 col-sm-1 col-sm-offset-1 col-md-1 col-md-offset-2 col-lg-1 col-lg-offset-0">
+	<!-- Button trigger modal -->
+<button class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
+  LOGIN
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">LOGIN</h4>
+      </div>
+      <div class="modal-body">
+       <form role="form">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Remember me on this computer
+    </label>
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Sign In</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+	</div>
+</header>
+
+
+<div class="collections row">
+<ul class="list-inline hidden-xs">
+	<a href="search.html"><li class="color1 col-sm-2">BOOKS</li></a>
+	<a href="searchm.html"><li class="color2 col-sm-2">MAGAZINES</li></a>
+	<a href="searchj.html"><li class="color3 col-sm-2">JOURNALS</li></a>
+	<a href="searchf.html"><li class="color4 col-sm-2">FILMS</li></a>
+	<a href="searchs.html"><li class="color5 col-sm-2">SOUND RECORDINGS</li></a>
+	<a href="searchi.html"><li class="color6 col-sm-2">IMAGES</li></a>
+</ul>
+</div>
+
+
+<div class="row">
+	<div class="search col-xs-12 ">
+		  <div class="col-xs-10 col-xs-offset-1 col-sm-9 col-sm-offset-2">
+
+		  <input class="form-control" id="focusedInput" type="text" value="What are you searching for?"></div>
+
+		  <div class="icon col-xs-1"><a href="searchresults.html"><span class="glyphicon glyphicon-search"></span></a></div>
+
+		  <div class=" col-xs-10 col-xs-offset-1 col-sm-9 col-sm-offset-2">
+
+
+		    <div class="input-group first">
+		      <input type="text" class="form-control" value="Filter by">
+		      <div class="input-group-btn">
+		        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Subject<span class="caret"></span></button>
+		        <ul class="dropdown-menu pull-right">
+		        <li><a href="#">Science</a></li>
+		        <li><a href="#">Literary</a></li>
+		        <li><a href="#">Poetry</a></li>
+		        <li><a href="#">History</a></li>
+		        <li><a href="#">Philosophy</a></li>
+		        </ul>
+		      </div><!-- /btn-group -->
+		    </div><!-- /input-group -->
+		  <div class="input-group second">
+		      <input type="text" class="form-control" value="Filter by">
+		      <div class="input-group-btn">
+		        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Publication Date<span class="caret"></span></button>
+		        <ul class="dropdown-menu pull-right">
+		          <li><a href="#">2013</a></li>
+		          <li><a href="#">2012</a></li>
+		          <li><a href="#">2011</a></li>
+		          <li><a href="#">2010</a></li>
+		          <li><a href="#">older</a></li>
+				</ul>
+		      </div><!-- /btn-group -->
+		    </div><!-- /input-group -->
+		  
+		  </div><!-- /.col -->
+	</div>	
+	</div><!--row-->
+</div>
+
+<div class="collections row">
+<div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+<ul class="list-inline">
+	<a href="search.html"><li class="color1 col-sm-12 col-sm-2">BOOKS</li></a>
+	<a href="searchm.html"><li class="color2 col-sm-12 col-sm-2">MAGAZINES</li></a>
+	<a href="searchf.html"><li class="color4 col-sm-12 col-sm-2">FILMS</li></a>
+	<a href="searchs.html"><li class="color5 col-sm-12 col-sm-2">SOUND RECORDINGS</li></a>
+	<a href="searchi.html"><li class="color6 col-sm-12 col-sm-2">IMAGES</li></a>
+</ul>
+</div>
+</div>
+
+
+<div class="row hidden-xs">
+	<div class="map col-sm-6 col-sm-offset-3 ">
+		<img class="img-responsive" src="images/fullmapcolor.jpg">
+	</div>
+</div>
+
+	
+<footer class="row">
+	 <div class="col-xs-12 col-sm-3 col-sm-offset-1">
+	  <ul>
+	  <li><a href="">MAPS</a></li>
+	  <li><a href="">HOURS</a></li>
+	  <li><a href="">CONTACT US</a></li>
+  	  <li><a href="">PRIVACY STATEMENT</a></li>
+	  <li><a href="">STAFF DIRECTORY</a></li>
+	  </ul>
+	  </div>
+	  
+	  <div class="address col-xs-12 col-sm-3 col-sm-offset-1">
+	  <p>libr@mica.edu</br>1401 W. Mt. Royal Ave </br> Baltimore, MD 21217</br> (P) (410)225-2304</br> (F) (410)225-2316<p>
+	  </div>
+	  
+	  <div class="col-xs-12 col-sm-3 col-sm-offset-1">
+	  <ul>
+	  <li><a href="">SPECIAL NOTICES</a></li>
+  	  <ul class="social list-inline">
+  	  <a href="www.facebook.com"><img src="images/02_facebook.png" alt="facebook" class="img-circle"></a> 
+  	  <a href="www.twitter.com"><img src="images/01_twitter.png" alt="twitter" class="img-circle"></a>
+  	  <a href="www.youtube.com"><img src="images/03_youtube.png" alt="youtube" class="img-circle"></a>
+  	  </ul>	  
+  	  <li class="copyright">&copy; copyright MICA Decker Library</li>
+	  </ul>
+	  </div>
+</footer>
+
+</div><!--container-->
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
