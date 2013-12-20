@@ -67,6 +67,18 @@ a {
 	
 }
 
+.heading {
+	background:rgba(230,230,230,1);
+		padding:40px 0px 0 0;
+
+}
+
+h1 {
+	font-family:"Museo Sans W01 100";
+	font-size:20px;
+	
+}
+
 .content {
 	background:rgba(230,230,230,1);
 	text-align:left;
@@ -84,6 +96,7 @@ a {
 .content img {
 	width:150px;
 	box-shadow:0px 3px 5px #888888;
+	margin:0 0 20px 0;
 
 }
 
@@ -111,7 +124,7 @@ h6 {
 }
 
 
-.content span{
+.arrow{
 	padding:100px 0 0 10px;
 	
 }
@@ -133,7 +146,9 @@ h6 {
 }
 
 .isbn {
-	margin:50px 0 0 0;
+	margin:10px 0 15px 0;
+		padding:15px 0px 10px 15px;
+	background-color:rgba(179,179,179,1);
 }
 
 h5 {
@@ -145,6 +160,11 @@ h5 {
 .description p{
 	margin:0 0 15px 0;	
 	font-size:13px;
+}
+
+.action {
+	margin:20px 0 0 0;
+	
 }
 
 .pagination {
@@ -228,12 +248,31 @@ line-height:150%;
 	
 }
 
+
+/*---xx-small screens---*/
+@media (max-width: 480px) { 
+
+.mainhead {
+	margin:90px 20px 20px 20px;
+	text-align:center;
+}
+
+.mainhead li {
+	margin:0 100px 0 100px;
+	
+}
+
+
+footer p{
+	margin:20px;
+	font-size:11px;
+	
+}
+}
+
+
 /*---x-small screens---*/
 @media (min-width: 480px) and (max-width: 750px) { 
-
-header {
-	background-color:orange;
-}
 
 .logo {
 	width:100px;
@@ -272,10 +311,6 @@ footer p{
 /*---small screens---*/
 @media (min-width: 750px) and (max-width: 970px) { 
 
-header {
-	background-color:red;
-}
-
 .logo {
 	width:100px;
 	margin:0 0 0 40px;
@@ -313,39 +348,11 @@ footer {
 	text-align:left;
 	
 }
-.collections .color1{
-	padding:15px 0 15px 0;
-}
-
-.collections .color2{
-	padding:15px 0 15px 0;
-	
-}
-
-.collections .color3{
-	padding:15px 0 15px 0;
-	
-}
-
-.collections .color4{
-	padding:15px 0 15px 0;
-	
-}
-
-.collections .color6{
-	padding:15px 0 15px 0;
-	
-}
 	
 }
 
 /*---medium screens---*/
 @media (min-width: 970px) and (max-width: 1170px) { 
-
-header {
-	background-color:green;
-	
-}
 
 .logo {
 	width:100px;
@@ -388,39 +395,13 @@ footer {
 	
 }
 
-.collections .color1{
-	padding:15px 0 15px 0;
-}
-
-.collections .color2{
-	padding:15px 0 15px 0;
-	
-}
-
-.collections .color3{
-	padding:15px 0 15px 0;
-	
-}
-
-.collections .color4{
-	padding:15px 0 15px 0;
-	
-}
-
-.collections .color6{
-	padding:15px 0 15px 0;
-	
-}
-
 
 
 }
 
 /*---large screens---*/
 @media (min-width: 1170px) {  
-header {
-	background-color:blue;
-}
+
 .collections li{
 	padding-top:8px;
 }

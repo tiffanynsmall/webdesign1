@@ -35,7 +35,7 @@ header li{
 }
 
 .login{
-margin:15px 0 0 150px;	
+	margin:15px 0 0 150px;	
 }
 
 a:hover{
@@ -109,8 +109,13 @@ h6 {
 	
 }
 
-.content span{
+.content .arrow{
 	padding:100px 0 0 10px;
+	
+}
+
+.content .btn {
+	margin:20px 0 0 0px;
 	
 }
 
@@ -130,7 +135,9 @@ h6 {
 }
 
 .isbn {
-	margin:20px 0 0 0;
+	margin:10px 0 15px 0;
+	padding:15px 0px 10px 15px;
+	background-color:rgba(179,179,179,1);
 }
 
 h5 {
@@ -154,7 +161,7 @@ h5 {
 
 .pagination {
 	margin:0px 0 0 30px;
-	padding:100px 0 0 0;
+	padding:20px 0 0 0;
 }
 
 .search {
@@ -175,8 +182,8 @@ footer li{
 	margin:3px;
 }
 .address {
-font-size:12px;
-line-height:150%;
+	font-size:12px;
+	line-height:150%;
 	
 }
 .social {
@@ -240,6 +247,27 @@ line-height:150%;
 	
 }
 
+/*---xx-small screens---*/
+@media (max-width: 480px) { 
+
+.mainhead {
+	margin:90px 20px 20px 20px;
+	text-align:center;
+}
+
+.mainhead li {
+	margin:0 100px 0 100px;
+	
+}
+
+
+footer p{
+	margin:20px;
+	font-size:11px;
+	
+}
+}
+
 /*---x-small screens---*/
 @media (min-width: 480px) and (max-width: 750px) { 
 
@@ -263,6 +291,10 @@ line-height:150%;
 
 .isbn {
 	margin:10px 0 15px 0;
+}
+
+.description{
+	
 }
 
 .content li {
@@ -317,29 +349,6 @@ footer {
 	text-align:left;
 	
 }
-.collections .color1{
-	padding:15px 0 15px 0;
-}
-
-.collections .color2{
-	padding:15px 0 15px 0;
-	
-}
-
-.collections .color3{
-	padding:15px 0 15px 0;
-	
-}
-
-.collections .color4{
-	padding:15px 0 15px 0;
-	
-}
-
-.collections .color6{
-	padding:15px 0 15px 0;
-	
-}
 	
 }
 
@@ -386,31 +395,6 @@ footer {
 	text-align:left;
 	
 }
-
-.collections .color1{
-	padding:15px 0 15px 0;
-}
-
-.collections .color2{
-	padding:15px 0 15px 0;
-	
-}
-
-.collections .color3{
-	padding:15px 0 15px 0;
-	
-}
-
-.collections .color4{
-	padding:15px 0 15px 0;
-	
-}
-
-.collections .color6{
-	padding:15px 0 15px 0;
-	
-}
-
 
 
 }

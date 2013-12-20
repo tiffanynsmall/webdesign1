@@ -180,6 +180,27 @@ line-height:150%;
 	
 }
 
+/*---xx-small screens---*/
+@media (max-width: 480px) { 
+
+.mainhead {
+	margin:90px 20px 20px 20px;
+	text-align:center;
+}
+
+.mainhead li {
+	margin:0 100px 0 100px;
+	
+}
+
+
+footer p{
+	margin:20px;
+	font-size:11px;
+	
+}
+}
+
 
 /*---x-small screens---*/
 @media (min-width: 480px) and (max-width: 750px) { 
@@ -258,29 +279,7 @@ footer{
 	
 }
 
-.collections .color1{
-	padding:15px 0 15px 0;
-}
 
-.collections .color2{
-	padding:15px 0 15px 0;
-	
-}
-
-.collections .color3{
-	padding:15px 0 15px 0;
-	
-}
-
-.collections .color4{
-	padding:15px 0 15px 0;
-	
-}
-
-.collections .color6{
-	padding:15px 0 15px 0;
-	
-}
 	
 }
 
@@ -329,29 +328,7 @@ footer{
 	
 }
 
-.collections .color1{
-	padding:15px 0 15px 0;
-}
 
-.collections .color2{
-	padding:15px 0 15px 0;
-	
-}
-
-.collections .color3{
-	padding:15px 0 15px 0;
-	
-}
-
-.collections .color4{
-	padding:15px 0 15px 0;
-	
-}
-
-.collections .color6{
-	padding:15px 0 15px 0;
-	
-}
 
 
 
